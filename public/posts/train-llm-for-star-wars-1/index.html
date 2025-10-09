@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Train LLM for Star Wars | My New Hugo Site</title>
+<link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" /><meta property="og:url" content="https://lutjebroeker.github.io/posts/train-llm-for-star-wars-1/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="Train LLM for Star Wars">
+  <meta property="og:description" content="Okay, retraining laszlo/bob-silly-dungeon-master:latest (which is a surprisingly flexible model!) for a Star Wars RPG like Fantasy Flight Games’ (FFG) Star Wars RPG is a challenging but potentially rewarding project. Here’s a breakdown of how you can approach it, covering data preparation, fine-tuning, and potential limitations. I’m going to break it down into manageable sections. Please read the “Important Considerations &amp; Limitations” at the very end - this is crucial.
+1. Understanding the Base Model &amp; Your Goals">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-09T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-10-09T00:00:00+00:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Train LLM for Star Wars">
+  <meta name="twitter:description" content="Okay, retraining laszlo/bob-silly-dungeon-master:latest (which is a surprisingly flexible model!) for a Star Wars RPG like Fantasy Flight Games’ (FFG) Star Wars RPG is a challenging but potentially rewarding project. Here’s a breakdown of how you can approach it, covering data preparation, fine-tuning, and potential limitations. I’m going to break it down into manageable sections. Please read the “Important Considerations &amp; Limitations” at the very end - this is crucial.
+1. Understanding the Base Model &amp; Your Goals">
+
+      <link rel="stylesheet" href="/css/root.min.0e732b812b9751962e01a7c4798a1211cd5f8ac8abec7f99793fe306989e459f.css" integrity="sha256-DnMrgSuXUZYuAafEeYoSEc1fisir7H&#43;ZeT/jBpieRZ8=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/bundle.min.d95a325399a05b50fe47dcf35b8229b8a2a014fcee5435cfb28204c6ac335fc5.css" integrity="sha256-2VoyU5mgW1D&#43;R9zzW4IpuKKgFPzuVDXPsoIExqwzX8U=" crossorigin="anonymous">
+
+      <script src="/js/bundle.cc8ae9952dbfb731affafabdf26e5c60a6910047ff59ccdeaf1daebaa26c8830.js" integrity="sha256-zIrplS2/tzGv&#43;vq98m5cYKaRAEf/Wczerx2uuqJsiDA=" crossorigin="anonymous"></script><script defer src="/js/search/flexsearch.compact.64594b125f7b78bdf4fa8316955922bbebb1cd6baef3f16654bfca20309f18f8.js" integrity="sha256-ZFlLEl97eL30&#43;oMWlVkiu&#43;uxzWuu8/FmVL/KIDCfGPg="></script>
+<script defer src="/js/search/search.1d980f84df11f3eb7c8c5f17f541d49a0611608df179dd74fa7f06225eb56ace.js" integrity="sha256-HZgPhN8R8&#43;t8jF8X9UHUmgYRYI3xed10&#43;n8GIl61as4="></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+</head>
+<body class="notransition">
+  <div id="container">
+    <header id="main-header"><div role="navigation" aria-label="Main">
+  <div class="nav-left">
+    <a href="https://lutjebroeker.github.io/" style="color: inherit;">My New Hugo Site</a>
+  </div>
+  <div class="nav-right">
+    <div style="position:absolute;width:0px;height:0px;">
+      <div id="nav-dropdown-menu" class="hidden" href="#">
+    <div class="nav-item">
+      <a aria-current="true" class="ancestor" href="/posts/"
+      >Posts</a>
+    </div>
+</div>
+    </div>
+    <a id="nav-dropdown-button" href="#"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+    <div id="nav-menu">
+    <div class="nav-item">
+      <a aria-current="true" class="ancestor" href="/posts/"
+      >Posts</a>
+    </div>
+</div>
+    <a id="theme-switcher" href="#">
+<svg class="light-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+<svg class="dark-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+  </div>
+</div>
+</header>
+    <div class="flex grow">
+      <div id="main-pane">
+        <main id="main-content"><div class="single-header">
+<ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="https://lutjebroeker.github.io/">
+        <span itemprop="name">Home</span>
+      </a>
+      <meta itemprop="position" content='1' />
+    </li>
+    <span>&nbsp»&nbsp</span>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="https://lutjebroeker.github.io/posts/">
+        <span itemprop="name">Posts</span>
+      </a>
+      <meta itemprop="position" content='2' />
+    </li>
+    <span>&nbsp»&nbsp</span>
+</ol>
+<h1>Train LLM for Star Wars</h1><time class="dim" datetime="2025-10-09T00:00:00&#43;00:00">October 9, 2025</time></div>
+  <section class="page-section"><p>Okay, retraining <code>laszlo/bob-silly-dungeon-master:latest</code> (which is a surprisingly flexible model!) for a Star Wars RPG like Fantasy Flight Games&rsquo; (FFG) Star Wars RPG is a challenging but potentially rewarding project. Here&rsquo;s a breakdown of how you can approach it, covering data preparation, fine-tuning, and potential limitations.  I&rsquo;m going to break it down into manageable sections.  <strong>Please read the &ldquo;Important Considerations &amp; Limitations&rdquo; at the very end - this is crucial.</strong></p>
+<p><strong>1. Understanding the Base Model &amp; Your Goals</strong></p>
+<ul>
+<li><strong><code>laszlo/bob-silly-dungeon-master:latest</code>:</strong> This model is designed to mimic a whimsical dungeon master.  It&rsquo;s <em>not</em> inherently Star Wars-aware. You&rsquo;re essentially teaching it a new persona and knowledge base.  It&rsquo;s likely built on a larger language model (like GPT), so it has some foundational language understanding, but you&rsquo;re adding the Star Wars specifics.</li>
+<li><strong>Your Goal:</strong>  You want the model to:
+<ul>
+<li>Understand Star Wars lore (planets, characters, species, factions, etc.)</li>
+<li>Generate Star Wars-themed descriptions, encounters, and narratives.</li>
+<li>Potentially handle basic RPG mechanics (though this will be very limited – see limitations below).</li>
+<li>Maintain a tone that&rsquo;s appropriate for Star Wars (more serious/epic than the &ldquo;silly dungeon master&rdquo; base).</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. Data Preparation - The Most Critical Step</strong></p>
+<ul>
+<li><strong>Gather Data:</strong> This is the bulk of the work. You need a <em>lot</em> of Star Wars-related text. Here&rsquo;s what you can use:
+<ul>
+<li><strong>FFG RPG Rulebooks:</strong> The core rulebooks, sourcebooks, and adventure modules are goldmines.</li>
+<li><strong>Star Wars Novels &amp; Comics:</strong>  These provide rich lore and character development.</li>
+<li><strong>Star Wars Film &amp; TV Transcripts:</strong>  Good for dialogue and scene descriptions.</li>
+<li><strong>Wookieepedia:</strong> A comprehensive Star Wars wiki.  Use this cautiously, as the writing style can be uneven.</li>
+<li><strong>Existing Star Wars RPG Logs/Transcripts:</strong>  If you have any, these are incredibly valuable.</li>
+</ul>
+</li>
+<li><strong>Data Cleaning &amp; Formatting:</strong>
+<ul>
+<li><strong>Remove Noise:</strong>  Get rid of irrelevant headers, footers, tables of contents, and legal disclaimers.</li>
+<li><strong>Text Extraction:</strong> Convert PDFs and images to text. This will likely require OCR (Optical Character Recognition) and manual correction.</li>
+<li><strong>Chunking:</strong> Break the text into smaller, manageable chunks.  The optimal chunk size depends on the model&rsquo;s context window (how much text it can process at once).  Experiment with different sizes (e.g., 512 tokens, 1024 tokens).</li>
+<li><strong>Prompt Engineering for Training Data:</strong>  This is key.  You need to structure your data to <em>teach</em> the model how to act as a Star Wars GM.  Here are some examples:
+<ul>
+<li><strong>Instruction-Following Examples:</strong>
+<pre tabindex="0"><code>Instruction: Describe the cantina on Nar Shaddaa.
+Response: The Chalmun&#39;s Spaceport Cantina on Nar Shaddaa is a hive of scum and villainy. The air is thick with the smells of spice, sweat, and desperation.  Gangs of smugglers and bounty hunters mingle with alien gamblers and weary travelers.  The music is loud, the drinks are strong, and danger lurks around every corner.
+</code></pre></li>
+<li><strong>Dialogue Examples (GM &amp; Player):</strong>
+<pre tabindex="0"><code>GM: You enter a dimly lit corridor. You hear the sound of dripping water and a faint clicking noise.
+Player: I draw my blaster and proceed cautiously.
+GM: The clicking grows louder.  A protocol droid, deactivated and covered in grime, shuffles into view.
+</code></pre></li>
+<li><strong>Encounter Generation Examples:</strong>
+<pre tabindex="0"><code>Instruction: Generate a combat encounter on Tatooine for a party of three level 1 characters.
+Response: The party is ambushed by four Tusken Raiders while traveling across the Dune Sea. The Raiders are armed with gaderffii sticks and vibroblades. The terrain is difficult, with shifting sands and rocky outcrops.
+</code></pre></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Data Quantity:</strong>  You&rsquo;re looking for <em>at least</em> several megabytes of training data, and ideally much more.  The more data you have, the better the model will perform.</li>
+</ul>
+<p><strong>3. Fine-Tuning the Model</strong></p>
+<ul>
+<li><strong>Platform:</strong> You&rsquo;re going to need a platform to fine-tune the model.  Common choices include:
+<ul>
+<li><strong>Hugging Face Transformers:</strong>  This is a popular Python library for working with language models.  It provides tools for fine-tuning and inference.</li>
+<li><strong>Google Colab:</strong>  Provides free GPU resources for training (but with limitations).</li>
+<li><strong>Cloud Services (AWS, GCP, Azure):</strong>  Offer more powerful and scalable resources for training.</li>
+</ul>
+</li>
+<li><strong>Fine-Tuning Process:</strong>
+<ol>
+<li><strong>Load the Model:</strong> Use the Hugging Face <code>transformers</code> library to load <code>laszlo/bob-silly-dungeon-master:latest</code>.</li>
+<li><strong>Prepare the Dataset:</strong>  Format your training data into a dataset that the model can understand.  This typically involves tokenizing the text and creating input sequences.</li>
+<li><strong>Training Arguments:</strong>  Configure the training process.  Key parameters include:
+<ul>
+<li><strong>Learning Rate:</strong>  Controls how much the model&rsquo;s weights are adjusted during training.  Start with a small learning rate (e.g., 1e-5) and experiment.</li>
+<li><strong>Epochs:</strong>  The number of times the model iterates over the entire dataset.</li>
+<li><strong>Batch Size:</strong>  The number of training examples processed in each iteration.</li>
+</ul>
+</li>
+<li><strong>Train the Model:</strong>  Start the fine-tuning process.  Monitor the training loss – it should decrease over time.</li>
+<li><strong>Save the Fine-Tuned Model:</strong>  Save the model&rsquo;s weights after training.</li>
+</ol>
+</li>
+</ul>
+<p><strong>4. Inference and Testing</strong></p>
+<ul>
+<li><strong>Load the Fine-Tuned Model:</strong>  Load the model&rsquo;s weights.</li>
+<li><strong>Prompting:</strong>  Provide prompts to the model and evaluate its responses.</li>
+<li><strong>Iterative Refinement:</strong>  Based on the model&rsquo;s performance, adjust the training data, training parameters, or prompting strategies.</li>
+</ul>
+<p><strong>Important Considerations &amp; Limitations</strong></p>
+<ul>
+<li><strong>Computational Resources:</strong> Fine-tuning large language models requires significant computational resources (GPU, RAM).  This can be expensive.</li>
+<li><strong>Model Size &amp; Context Window:</strong>  <code>laszlo/bob-silly-dungeon-master:latest</code> is likely a relatively large model.  The context window (the amount of text it can process at once) is crucial.  If your prompts or training data exceed the context window, the model will truncate them, leading to poor performance.</li>
+<li><strong>RPG Mechanics:</strong> This model is <em>not</em> designed to handle complex RPG mechanics.  It can <em>describe</em> actions and outcomes, but it won&rsquo;t be able to accurately calculate dice rolls, track character statistics, or enforce game rules.  You&rsquo;re essentially creating a narrative generator, not a full-fledged RPG engine.</li>
+<li><strong>Hallucinations:</strong>  Large language models are prone to &ldquo;hallucinations&rdquo; – generating false or misleading information.  Carefully review the model&rsquo;s responses and correct any errors.</li>
+<li><strong>Copyright:</strong> Be mindful of copyright restrictions when using copyrighted material for training.  Fair use guidelines may apply, but it&rsquo;s best to err on the side of caution.</li>
+<li><strong>&ldquo;Bob&rsquo;s&rdquo; Personality:</strong> You&rsquo;re overriding the original &ldquo;Bob&rdquo; persona.  While you can try to retain some of his whimsy, it will be challenging.</li>
+<li><strong>Limited Star Wars Expertise:</strong> The model will only know what it has been trained on.  It won&rsquo;t be able to answer questions about obscure Star Wars lore that it hasn&rsquo;t encountered.</li>
+</ul>
+<p><strong>To help me tailor the advice further, could you tell me:</strong></p>
+<ul>
+<li>What are your computational resources like (e.g., do you have access to a GPU?)</li>
+<li>What&rsquo;s your level of experience with Python and machine learning?</li>
+<li>What aspects of the Star Wars RPG do you want the model to focus on (e.g., narrative description, encounter generation, character interaction)?</li>
+</ul>
+</section></main>
+        <footer id="main-footer"><div class="footer">
+  <a href="#">Scroll to Top</a>
+  <div class="footer-copyright">
+    <div class="dim">© 2025 </div>
+    <div>Made with ❤️ and powered by <a href="https://github.com/math-queiroz/rusty-typewriter" target="_blank">Rusty Typewriter</a> theme for <a href="https://gohugo.io/" target="_blank">Hugo</a></div>
+  </div>
+</div>
+</footer>
+      </div><aside id="side-pane" class="side-sticky"><div class="side-details">
+    <span>1060 words</span>
+    <span>7 - 9 minutes read</span></div></aside></div>
+  </div>
+</body>
+</html>
