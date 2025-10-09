@@ -1,4 +1,4 @@
 baseURL = 'https://lutjebroeker.github.io/'
 languageCode = 'en-us'
-title = 'Jelle's Blog'
+title = 'Blog van Jelle'
 theme = 'rusty-typewriter'
