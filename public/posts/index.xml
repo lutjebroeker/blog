@@ -9,6 +9,13 @@
     <lastBuildDate>Thu, 09 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://lutjebroeker.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Automatisch KM declaratie bijhouden.</title>
+      <link>https://lutjebroeker.github.io/posts/blog-2---automatisch-bijhouden-km-eva/</link>
+      <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://lutjebroeker.github.io/posts/blog-2---automatisch-bijhouden-km-eva/</guid>
+      <description>&lt;h1 id=&#34;tutorial-automatische-kilometerregistratie-voor-declaraties-met-home-assistant-node-red-en-obsidian&#34;&gt;Tutorial: Automatische Kilometerregistratie voor Declaraties met Home Assistant, Node-RED en Obsidian&lt;/h1&gt;&#xA;&lt;p&gt;Met deze tutorial stel je een volledige workflow in om automatisch ritten vast te leggen en als maandelijkse Markdown-bestanden in Obsidian bij te houden, gebaseerd op je Home Assistant-data. We gebruiken:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Home Assistant voor odometer- en locatie-data&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Node-RED add-on in Home Assistant voor logica en bestandsbeheer&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Obsidian voor gestructureerde opslag in je vault&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Volg de onderstaande stappen zorgvuldig. Aan het eind van dit artikel kun je al je zakelijke ritten automatisch exporteren naar maandelijkse declaratiebestanden in Obsidian.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Train LLM for Star Wars</title>
       <link>https://lutjebroeker.github.io/posts/train-llm-for-star-wars-1/</link>
       <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
