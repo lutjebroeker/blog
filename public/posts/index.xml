@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Blog van Jelle</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://lutjebroeker.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to automaticly log your workday kilometres</title>
+      <link>https://lutjebroeker.github.io/posts/how-to-automaticly-log-your-workday-kilometres/</link>
+      <pubDate>Sat, 11 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://lutjebroeker.github.io/posts/how-to-automaticly-log-your-workday-kilometres/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;My wife needs to fill in all kilometers she rode during workdays. Using Node-Red, Obsidian and Home Assistant I log this automatically! Saving us around 15 minutes every workday. We do this with the following steps.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Log the odometer of the car when my wive leaves home.&lt;/li&gt;&#xA;&lt;li&gt;If she arrives at here office sometime after leaving the house, mark today as a workday.&lt;/li&gt;&#xA;&lt;li&gt;When it&amp;rsquo;s a workday, at arrival home. Store the odometer again. And calcualte thge difference with when she left.&lt;/li&gt;&#xA;&lt;li&gt;Write the date, start KM, end Km and differnence in the table within obisidna. (of course the file will be created when it&amp;rsquo;s not already there.)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h1 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[Home Assistant ](&lt;a href=&#34;https://www.home-assistant.io/&#34;&gt;Home Assistant&lt;/a&gt;)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[Node-Red Add-on](&lt;a href=&#34;https://github.com/hassio-addons/addon-node-red&#34;&gt;hassio-addons/addon-node-red: Node-RED - Home Assistant Community Add-ons&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;li&gt;[Mobile Companion App](&lt;a href=&#34;https://companion.home-assistant.io/&#34;&gt;Home Assistant Companion Docs&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;li&gt;[Hyundia Kia Connect - HACS Intergration](&lt;a href=&#34;https://github.com/Hyundai-Kia-Connect/kia_uvo&#34;&gt;Hyundai-Kia-Connect/kia_uvo: A Home Assistant HACS integration that supports Kia Connect(Uvo) and Hyundai Bluelink. The integration supports the EU, Canada and the USA.&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;[Obsidian](&lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian - Sharpen your thinking&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;li&gt;[Node-Red](&lt;a href=&#34;https://nodered.org/&#34;&gt;Low-code programming for event-driven applications : Node-RED&lt;/a&gt;) (With acces to the obsidian files)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;walktrough&#34;&gt;Walktrough&lt;/h1&gt;&#xA;&lt;p&gt;Assuming you have evrything in the prerequisities setup.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>What if my smart home helps me remember all the small things I always forget?</title>
       <link>https://lutjebroeker.github.io/posts/what-if-my-smart-home-helps-me-remember-all-the-small-things-i-always-forget/</link>

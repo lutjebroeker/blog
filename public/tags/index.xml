@@ -6,6 +6,28 @@
     <description>Recent content in Tags on Blog van Jelle</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Sat, 11 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://lutjebroeker.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HomeAssistant</title>
+      <link>https://lutjebroeker.github.io/tags/homeassistant/</link>
+      <pubDate>Sat, 11 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://lutjebroeker.github.io/tags/homeassistant/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Node-Red</title>
+      <link>https://lutjebroeker.github.io/tags/node-red/</link>
+      <pubDate>Sat, 11 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://lutjebroeker.github.io/tags/node-red/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Obsidian</title>
+      <link>https://lutjebroeker.github.io/tags/obsidian/</link>
+      <pubDate>Sat, 11 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://lutjebroeker.github.io/tags/obsidian/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
