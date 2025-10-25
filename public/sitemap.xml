@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://lutjebroeker.github.io/posts/building-my-digital-accountability-partner/</loc>
+    <lastmod>2025-10-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lutjebroeker.github.io/posts/</loc>
+    <lastmod>2025-10-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lutjebroeker.github.io/</loc>
+    <lastmod>2025-10-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://lutjebroeker.github.io/tags/homeassistant/</loc>
     <lastmod>2025-10-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -14,19 +23,11 @@
     <loc>https://lutjebroeker.github.io/tags/obsidian/</loc>
     <lastmod>2025-10-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://lutjebroeker.github.io/posts/</loc>
-    <lastmod>2025-10-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://lutjebroeker.github.io/tags/</loc>
-    <lastmod>2025-10-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://lutjebroeker.github.io/</loc>
     <lastmod>2025-10-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lutjebroeker.github.io/posts/what-if-my-smart-home-helps-me-remember-all-the-small-things-i-always-forget/</loc>
     <lastmod>2025-10-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://lutjebroeker.github.io/posts/building-my-digital-accountability-partner/</loc>
   </url><url>
     <loc>https://lutjebroeker.github.io/categories/</loc>
   </url>

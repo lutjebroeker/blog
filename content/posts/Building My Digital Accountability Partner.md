@@ -1,6 +1,6 @@
 ---
 title: Building My Digital Accountability Partner
-date:
+date: 2025-10-25
 tags:
 topics:
 ---

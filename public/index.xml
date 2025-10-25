@@ -6,8 +6,15 @@
     <description>Recent content in Welcome to my blog! on Blog van Jelle</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://lutjebroeker.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building My Digital Accountability Partner</title>
+      <link>https://lutjebroeker.github.io/posts/building-my-digital-accountability-partner/</link>
+      <pubDate>Sat, 25 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://lutjebroeker.github.io/posts/building-my-digital-accountability-partner/</guid>
+      <description>&lt;h1 id=&#34;building-my-digital-accountability-partner&#34;&gt;Building My Digital Accountability Partner&lt;/h1&gt;&#xA;&lt;p&gt;What if you could combine the life-changing principles from the world&amp;rsquo;s most powerful self-development books with cutting-edge automation technology? That&amp;rsquo;s exactly what I set out to create—a digital accountability partner that helps me become my best self every single day.&lt;/p&gt;&#xA;&lt;p&gt;After diving deep into transformational books like &lt;em&gt;Atomic Habits&lt;/em&gt;, &lt;em&gt;The 7 Habits of Highly Effective People&lt;/em&gt;, &lt;em&gt;Feel Good Productivity&lt;/em&gt;, &lt;em&gt;Wild Courage&lt;/em&gt;, &lt;em&gt;Building a Second Brain&lt;/em&gt;, and &lt;em&gt;The 12 Week Year&lt;/em&gt;, I realized something profound: knowledge without consistent action is just entertainment. These books are filled with proven frameworks for habit formation, goal achievement, and personal growth—but implementing them consistently? That&amp;rsquo;s where most of us struggle.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to automaticly log your workday kilometres</title>
       <link>https://lutjebroeker.github.io/posts/how-to-automaticly-log-your-workday-kilometres/</link>
@@ -21,13 +28,6 @@
       <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
       <guid>https://lutjebroeker.github.io/posts/what-if-my-smart-home-helps-me-remember-all-the-small-things-i-always-forget/</guid>
       <description>&lt;p&gt;After years of reading productivity books and building automations in Home Assistant, I’m on the verge of putting my knowledge and skills to work for the ultimate smart assistant. My goal? To never forget groceries again and to keep challenging myself, inspired by &lt;em&gt;The 7 Habits of Highly Effective People&lt;/em&gt; by Stephen Covey.&lt;/p&gt;&#xA;&lt;p&gt;In this blog, I will take you along on my journey: from the very first installation of Proxmox and all applications to who knows where this adventure will lead me. I hope to live not only smarter but also better.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Building My Digital Accountability Partner</title>
-      <link>https://lutjebroeker.github.io/posts/building-my-digital-accountability-partner/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lutjebroeker.github.io/posts/building-my-digital-accountability-partner/</guid>
-      <description>&lt;h1 id=&#34;building-my-digital-accountability-partner&#34;&gt;Building My Digital Accountability Partner&lt;/h1&gt;&#xA;&lt;p&gt;What if you could combine the life-changing principles from the world&amp;rsquo;s most powerful self-development books with cutting-edge automation technology? That&amp;rsquo;s exactly what I set out to create—a digital accountability partner that helps me become my best self every single day.&lt;/p&gt;&#xA;&lt;p&gt;After diving deep into transformational books like &lt;em&gt;Atomic Habits&lt;/em&gt;, &lt;em&gt;The 7 Habits of Highly Effective People&lt;/em&gt;, &lt;em&gt;Feel Good Productivity&lt;/em&gt;, &lt;em&gt;Wild Courage&lt;/em&gt;, &lt;em&gt;Building a Second Brain&lt;/em&gt;, and &lt;em&gt;The 12 Week Year&lt;/em&gt;, I realized something profound: knowledge without consistent action is just entertainment. These books are filled with proven frameworks for habit formation, goal achievement, and personal growth—but implementing them consistently? That&amp;rsquo;s where most of us struggle.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
