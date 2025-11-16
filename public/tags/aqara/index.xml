@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aqara on Blog van Jelle</title>
+    <link>https://lutjebroeker.github.io/tags/aqara/</link>
+    <description>Recent content in Aqara on Blog van Jelle</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lutjebroeker.github.io/tags/aqara/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fixing Aqara Lights That Turn On Randomly via ZHA</title>
+      <link>https://lutjebroeker.github.io/posts/fixing-aqara-lights-that-turn-on-randomly-via-zha/</link>
+      <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://lutjebroeker.github.io/posts/fixing-aqara-lights-that-turn-on-randomly-via-zha/</guid>
+      <description>&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;&#xA;&lt;p&gt;Your Aqara lamp (likely a &lt;strong&gt;T1M model&lt;/strong&gt;) that keeps turning on by itself through ZHA is a well-known issue. This happens because of the &lt;code&gt;power_on_behavior&lt;/code&gt; setting, which determines what the lamp does after a power outage. By default, it&amp;rsquo;s set to &amp;ldquo;On&amp;rdquo; (lamp turns on), but you want it set to &amp;ldquo;PreserveState&amp;rdquo; (maintains the previous state).&lt;/p&gt;&#xA;&lt;p&gt;The reason this problem occurs is that ZHA doesn&amp;rsquo;t provide default access to all Aqara-specific settings. You need a custom quirk that exposes the &lt;strong&gt;Manufacturer Specific Cluster (0xfcc0)&lt;/strong&gt; from Aqara with all the hidden attributes.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -2,13 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://lutjebroeker.github.io/posts/building-my-digital-accountability-partner/</loc>
-    <lastmod>2025-10-25T00:00:00+00:00</lastmod>
+    <loc>https://lutjebroeker.github.io/tags/aqara/</loc>
+    <lastmod>2025-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lutjebroeker.github.io/posts/fixing-aqara-lights-that-turn-on-randomly-via-zha/</loc>
+    <lastmod>2025-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lutjebroeker.github.io/tags/home-assistant/</loc>
+    <lastmod>2025-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lutjebroeker.github.io/tags/home-automation/</loc>
+    <lastmod>2025-11-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lutjebroeker.github.io/posts/</loc>
-    <lastmod>2025-10-25T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lutjebroeker.github.io/tags/</loc>
+    <lastmod>2025-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lutjebroeker.github.io/tags/troubleshooting/</loc>
+    <lastmod>2025-11-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lutjebroeker.github.io/</loc>
+    <lastmod>2025-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lutjebroeker.github.io/tags/zha/</loc>
+    <lastmod>2025-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lutjebroeker.github.io/tags/zigbee/</loc>
+    <lastmod>2025-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lutjebroeker.github.io/posts/building-my-digital-accountability-partner/</loc>
     <lastmod>2025-10-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lutjebroeker.github.io/tags/homeassistant/</loc>
@@ -21,9 +45,6 @@
     <lastmod>2025-10-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lutjebroeker.github.io/tags/obsidian/</loc>
-    <lastmod>2025-10-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://lutjebroeker.github.io/tags/</loc>
     <lastmod>2025-10-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lutjebroeker.github.io/posts/what-if-my-smart-home-helps-me-remember-all-the-small-things-i-always-forget/</loc>

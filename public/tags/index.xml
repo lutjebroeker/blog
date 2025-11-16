@@ -6,8 +6,50 @@
     <description>Recent content in Tags on Blog van Jelle</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://lutjebroeker.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aqara</title>
+      <link>https://lutjebroeker.github.io/tags/aqara/</link>
+      <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://lutjebroeker.github.io/tags/aqara/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Home-Assistant</title>
+      <link>https://lutjebroeker.github.io/tags/home-assistant/</link>
+      <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://lutjebroeker.github.io/tags/home-assistant/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Home-Automation</title>
+      <link>https://lutjebroeker.github.io/tags/home-automation/</link>
+      <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://lutjebroeker.github.io/tags/home-automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Troubleshooting</title>
+      <link>https://lutjebroeker.github.io/tags/troubleshooting/</link>
+      <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://lutjebroeker.github.io/tags/troubleshooting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zha</title>
+      <link>https://lutjebroeker.github.io/tags/zha/</link>
+      <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://lutjebroeker.github.io/tags/zha/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zigbee</title>
+      <link>https://lutjebroeker.github.io/tags/zigbee/</link>
+      <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://lutjebroeker.github.io/tags/zigbee/</guid>
+      <description></description>
+    </item>
     <item>
       <title>HomeAssistant</title>
       <link>https://lutjebroeker.github.io/tags/homeassistant/</link>
