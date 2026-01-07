@@ -6,8 +6,15 @@
     <description>Recent content in Welcome to my blog! on Blog van Jelle</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://lutjebroeker.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Context-Aware AI Morning Assistant Built with n8n</title>
+      <link>https://lutjebroeker.github.io/posts/a-context-aware-ai-morning-assistant-built-with-n8n/</link>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://lutjebroeker.github.io/posts/a-context-aware-ai-morning-assistant-built-with-n8n/</guid>
+      <description>&lt;p&gt;This n8n workflow is the backbone of a &lt;strong&gt;fully automated AI morning assistant&lt;/strong&gt;. Every morning, it gathers personal context from an Obsidian vault, combines it with long-term goals and daily focus, and uses a local large language model (LLM) to generate a personalized morning message—delivered directly via Telegram.&lt;/p&gt;&#xA;&lt;p&gt;The core idea is simple:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Use your own notes as the source of truth and let AI reflect on them every morning.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Fixing Aqara Lights That Turn On Randomly via ZHA</title>
       <link>https://lutjebroeker.github.io/posts/fixing-aqara-lights-that-turn-on-randomly-via-zha/</link>
