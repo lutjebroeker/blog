@@ -1,15 +1,30 @@
----
-title: "Welcome to my blog!"
+# Stop Reading Productivity Books. Start Actually Executing.
+
+I help ambitious Dutch professionals escape "productivity theater" and build AI-powered accountability systems that actually get them into action.
+
+After consuming 47+ self-help books while achieving zero real change, I realized the problem: **knowledge without accountability is just entertainment.**
+
+So I built an AI accountability partner that runs my life—automated morning routines, weekly reviews, and goal tracking that happens whether I feel motivated or not.
+
+**The result?** My 12 Week Year execution went from 23% to 87%. My morning routine takes 15 minutes instead of 2 hours. My goals actually happen.
+
+Now I'm helping 3 select professionals in Q1 2026 build their own custom AI accountability systems.
+
+**[Book Free Consultation →]** | **[Read My Story →]**
+
 ---
 
-Hello! I’m Jelle, a technical professional from the Netherlands, specialized in home automation, AI infrastructure, and self-hosted solutions. My passion is to use modern technology to make daily life simpler and smarter.  
-On this blog, I share my experiences and insights on:  
-
-- Proxmox virtualization and Docker containers  
-- Home Assistant and smart devices and automations  
-- AI models and how I apply them for practical use  
-- Solar energy optimization for a more sustainable home  
-
-All posts are published directly and automatically from my Obsidian setup, ensuring the content is always up-to-date and well organized.  
-Feel free to leave comments or ask questions—I’d love to hear from you!
+## What You'll Find Here
 
+Real transformation stories from someone who tried (and failed) every productivity system before building what actually works:
+
+- How I automated decision fatigue out of my mornings
+- Why self-hosted AI beats every SaaS productivity tool
+- The accountability systems that turn goals into execution
+- ROI calculations on automation that actually matters
+
+This isn't a tutorial blog. It's a case study in what happens when you stop consuming productivity content and start building systems that force execution.
+
+---
+
+*All content published directly from my Obsidian vault—because I practice what I preach about automated workflows.*
